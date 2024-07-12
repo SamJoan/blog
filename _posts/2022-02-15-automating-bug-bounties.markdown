@@ -66,7 +66,7 @@ When I decided to automate my bug bounty process, I had the following principles
 
 Because hardware is expensive, I want to be able to make use of the hardware I have in my home which are several gaming PCs and a couple of gaming laptops. If I make bank, I want to migrate the thing to the cloud entirely.
 
-![image](https://github.com/user-attachments/assets/374ccaf0-f7b2-4ad3-ac92-fae4bebe6bed)
+![image](images/automating-bug-bounties/1.png)
 
 I identified the need for the following software components:
 
@@ -90,13 +90,13 @@ Here is a diagram for what I already have in place, which works OK.
 
 My plan involves two ISPs, and looks as follows:
 
-![image](https://github.com/user-attachments/assets/2c33a417-2904-46ca-b9a8-baa256ff2fe2)
+![image](images/automating-bug-bounties/2.png)
 
 For now, ISP 1 is my home’s ISP, but I could change that if needed. This is useful because any “malicious” traffic originates from ISP2 so if I get banned only my worker threads will be banned and no data will be lost. 
 
 I was originally concerned about any potential delays this could cause in terms of message throughput and such. I discovered that RabbitMQ is truly very fast and that mitmproxy does not introduce any significant delays either. From my analysis, approximately 99% of delays seem to come from my very slow, non-optimized python code. Here’s what I implemented. This follows the RabbitMQ RPC pattern:
 
-![image](https://github.com/user-attachments/assets/8e56b463-f79b-4eeb-a063-abbda95812a4)
+![image](images/automating-bug-bounties/3.png)
 
 The proxy is also in charge of writing data to the database. I implemented this using Python’s synchronized queue class to prevent the threads in charge of responding to users from slowing down through the integration with the database, as well as database write batching. I published the source code for this component [here](https://github.com/benteveo-kiwi/unicornbottle-httpproxy).
 
@@ -117,7 +117,7 @@ I considered other approaches highlighted in various whitepapers I didn’t read
 
 Authentication is performed using Playwrights “code generator” that creates a login script that stores the state in a playwright state file.
 
-![image](https://github.com/user-attachments/assets/60d177f1-5390-4609-9c67-ddfc630fd0d7)
+![image](images/automating-bug-bounties/4.png)
 
 # Fuzzer
 
@@ -135,7 +135,7 @@ xx<PROJECT_ID>.<REQ_ID>.<PARAM_NAME>.<BUG_TYPE>.mydomain.com
 
 Based on this information we can store the pingback as a finding in the database. The architecture for the fuzzer is also stateless and makes use of the crawler for logging in to the website and fetching login cookies. Integrating the login process to each fuzz request allows us to ensure that we are fuzzing a logged in page, and not a session expired page. This is a big problem in burp where most of your requests will be logged out by the time active scanner reaches them. You can work around this in burp of course with the cookie jar and macros etc.
 
-![image](https://github.com/user-attachments/assets/3a27df38-56c0-4681-b64a-50b19de98e5f)
+![image](images/automating-bug-bounties/5.png)
 
 # In conclusion
 
