@@ -1,12 +1,12 @@
 ---
 title: Automating bug bounties
-date: 2022-02-21 03:53:55 Z
+date: 2022-02-21 03:53:00 Z
 categories:
 - benteveo
 layout: post
 ---
 
-I have bad news. I first noticed this one day like any other, and once I noticed it, I couldn’t escape the reality. Hacking is boring. This may seem counter-intuitive at first. If you looked at your average hacker, they wouldn’t look bored. More like a mixture of stressed and angry/depressed, probably.
+I have bad news... I first noticed this one day like any other, and once I noticed it, I couldn’t escape the reality. Hacking is boring. This may seem counter-intuitive at first. If you looked at your average hacker, they wouldn’t look bored. More like a mixture of stressed and angry/depressed, probably.
 
 But spend a day in their shoes and you’ll come to the same conclusion. Every attempt at hacking is basically a series of steps, tediously, methodically followed. 
 
