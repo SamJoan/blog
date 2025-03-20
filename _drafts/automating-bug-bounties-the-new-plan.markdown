@@ -9,4 +9,14 @@ Fuzzing, for those who don't know, is the art of throwing garbage at an applicat
 
 The big idea here is that if we can automate fuzzing, we can create a machine that takes CPU and other computing resources in and produces vulnerabilities as an output, which can hopefully be translated into bug bounty rewards. Lots of people are trying to do this at the moment, as it can give the illusion of being a sustainable way of being your own boss, particularly for people who benefit greatly from an income in american dollars.
 
-I have done bug bounty, also under the illusion of self-employment under the capitalist hellscape that is the world today, and have quite a bit to say about it. So this will be a series of blog posts discussing the design, implementation, horrible mistakes, refactoring and outcomes of creating the above described tool.
+I have done bug bounties, also under the illusion of self-employment under the capitalist hellscape that is the world today, and have quite a bit to say about it. So this will be a series of blog posts discussing the design, implementation, horrible mistakes, refactoring and outcomes of creating the above described tool.
+
+### Previous iteration
+
+I started working on the previous iteration of this tool, linked above, several years back during the heights of covid. At that time, similarly to most people on earth, I was slightly insane. In contrast now, also similarly to most, I've completely lost my mind. 
+
+Because of this, and also because of other new perspectives that I've gained after working as a platform engineer for three years in the meantime, there are several changes that I am contemplating. 
+
+To give a high-level overview of each component, in case it is useful to readers, these are the components of my planned solution:
+
+* 
