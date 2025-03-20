@@ -1,6 +1,6 @@
 ---
-title: Sam Joan Roque-Worcel
-timezone: UTC
+title: Sam's blog
+timezone: Pacific/Auckland
 collections:
   posts:
     title: Posts
@@ -8,11 +8,12 @@ collections:
   uploads:
     title: Uploads
     output: true
-email: sam@roque-worcel.com
+email: sam[_].roque-worcel.com
 description: My blog covering coding, security, game development and code challenges.
-baseurl: ''
-url: ''
+baseurl: 
+url: 
 github_username: samjoan
 theme: minima
 plugins:
 - jekyll-feed
+Field name: 
