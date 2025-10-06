@@ -11,7 +11,7 @@ Recently, there's been an increase in the amount of content generated procedural
 
 Because of this, I have started reading books. Previously, for mysterious reasons, I had found I was unable to read books: I'd pick them up, get bored and put them down. I thought this was due to maybe a bad attention span, but I discovered that it was mostly due to bad books. 
 
-Here's the deal: the book industry is also affected by this dearth of quality, and the books that do get published and advertised in platforms such as Amazon's Kindle Store, are, to put it mildly, not the best books ever written.
+Here's the deal: the book industry is also affected by this lack of quality, and the books that do get published and advertised in platforms such as Amazon's Kindle Store, are, to put it mildly, not the best books ever written.
 
 I tried various ways of finding "good books", i.e. those books that you can't put down. I tried various algorithmic recommendation engines, community sites, reddit. In the end, the best solution came in the form of "[Librarian's choice](https://wellington.govt.nz/news-and-events/news-and-information/our-wellington/2020/08/testing-the-librarians-choices)." This is a list maintained by librarians in my local city, Wellington.
 
