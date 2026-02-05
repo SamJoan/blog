@@ -16,6 +16,10 @@ baseurl:
 url: 
 github_username: samjoan
 theme: minima
+social_links:
+- title: GitLab profile
+    icon: gitlab
+    url: "https://gitlab.com/sroque-worcel"
 plugins:
 - jekyll-feed
 gitlab_username: sroque-worcel
