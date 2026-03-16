@@ -1,5 +1,5 @@
 ---
-title: 'Book Review: Play Nice by Rackel Harrison'
+title: 'Book Review: Play Nice by Rachel Harrison'
 date: 2026-03-16 18:08:00 +13:00
 ---
 
